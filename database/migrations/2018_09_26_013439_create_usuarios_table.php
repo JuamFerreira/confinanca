@@ -18,7 +18,7 @@ class CreateUsuariosTable extends Migration
             $table->integer('user_id')->unsigned();
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
 			$table->string('nome');
-			$table->integer('documento');
+			$table->string('documento');
 			$table->string('img', 100)->nullable();
             $table->timestamps();
         });
