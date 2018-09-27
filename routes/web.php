@@ -11,10 +11,13 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+$this->group(['middleware' =>['auth'], 'namespace' => 'Painel'], function(){
+	$this->get('painel', 'PainelController@index')->name('painel.home');
 });
+
+
+$this->get('/', 'Site\SiteController@index')->name('home');
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+//Route::get('/home', 'HomeController@index')->name('home');
