@@ -115,18 +115,30 @@ return [
             'can'  => 'manage-blog',
         ],
         [
-            'text'        => 'Pages',
-            'url'         => 'admin/pages',
+            'text'        => 'Início',
+            'url'         => 'painel/pages',
             'icon'        => 'book',
             'label'       => 4,
             'label_color' => 'success',
-        ]/*,
+        ],
         'ACCOUNT SETTINGS',
         [
-            'text' => 'Profile',
+            'text' => 'Financeiro',
             'url'  => 'admin/settings',
-            'icon' => 'user',
-        ],
+            'icon' => 'money',
+			'submenu' => [
+				[
+					'text' => 'Saldo',
+					'url' => 'conta',
+					'icon' => 'credit-card-alt'
+				],
+				[
+					'text' => 'Histórico de transações',
+					'url' => 'historico',
+					'icon' => 'history'
+				]
+			]
+        ]/*,
         [
             'text' => 'Change Password',
             'url'  => 'admin/settings',
