@@ -116,25 +116,25 @@ return [
         ],
         [
             'text'        => 'Início',
-            'url'         => 'painel/pages',
+            'url'         => 'painel',
             'icon'        => 'book',
             'label'       => 4,
             'label_color' => 'success',
         ],
-        'ACCOUNT SETTINGS',
+        'Painel administrativo',
         [
             'text' => 'Financeiro',
-            'url'  => 'admin/settings',
+            'url'  => 'painel/submenu',
             'icon' => 'money',
 			'submenu' => [
 				[
 					'text' => 'Saldo',
-					'url' => 'conta',
+					'url' => 'painel/saldo',
 					'icon' => 'credit-card-alt'
 				],
 				[
 					'text' => 'Histórico de transações',
-					'url' => 'historico',
+					'url' => 'painel/historico',
 					'icon' => 'history'
 				]
 			]

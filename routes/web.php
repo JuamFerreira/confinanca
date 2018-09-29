@@ -11,8 +11,10 @@
 |
 */
 
-$this->group(['middleware' =>['auth'], 'namespace' => 'Painel'], function(){
-	$this->get('painel', 'PainelController@index')->name('painel.home');
+$this->group(['middleware' =>['auth'], 'namespace' => 'Painel', 'prefix' => 'painel'], function(){
+	$this->get('saldo',	'SaldoController@index')->name('painel.saldo');
+	
+	$this->get('/', 'PainelController@index')->name('painel.home');
 });
 
 
