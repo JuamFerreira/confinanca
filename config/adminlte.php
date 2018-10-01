@@ -129,7 +129,7 @@ return [
 			'submenu' => [
 				[
 					'text' => 'Saldo',
-					'url' => 'painel/saldo',
+					'url' => 'painel/conta',
 					'icon' => 'credit-card-alt'
 				],
 				[
