@@ -7,7 +7,7 @@ use App\Model\Conta;
 
 class Usuario extends Model
 {
-	public function saldo() {
+	public function conta() {
 		return $this->hasOne(Conta::class);
 	}
 }
