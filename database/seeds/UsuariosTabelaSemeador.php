@@ -17,5 +17,11 @@ class UsuariosTabelaSemeador extends Seeder
 			'nome' => 'Administrador Maior',
 			'documento' => '12345678910'
 		]);
+		
+		Usuario::create([
+			'user_id' => '2',
+			'nome' => 'Gerentão du bom',
+			'documento' => '14395073960'
+		]);
 	}
 }

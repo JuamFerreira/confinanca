@@ -22,7 +22,7 @@
 				{!! csrf_field() !!}
 				
 				<div class="form-group">
-					<input type="text" class="form-control" placeholder="Valor do depósito">
+					<input type="text" name="valorDeposito" class="form-control" placeholder="Valor do depósito">
 				</div>
 				<div class="form-group">
 					<button type="submit" class="btn btn-sm btn-success">Enviar</button>
